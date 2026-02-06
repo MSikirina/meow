@@ -1,0 +1,6 @@
+class Alien:
+    def__init__(self, x,y):
+        self.x=x
+        self.y=y
+al=Alien(10,10)
+print(al)

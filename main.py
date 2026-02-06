@@ -31,32 +31,69 @@
 # ut=mycyph(ct,-c)
 # print(ut)
 
-f=open('alice.txt',encoding='utf-8')
-lines=f.read()
-d={}
-a=0
-alpha=list("абвгдеёжзийклмнопрстуфхцчшщъыьэюя")
-for ch in lines:
-    ch=ch.lower()
-    if ch in alpha:
-        if d.get(ch,0)==0:
-            d[ch]=1
-        else:
-            d[ch]+=1
-        a+=1
-f.close()
-sum=0
-for k in d:
-    sum+=d[k]
-    n=d[k]/a
-    d[k]=n
-    print(k,'=',n)
-print(a,sum)
-maxn=0
-maxa=''
-for k in d:
-    if d[k]>maxn:
-        maxn=d[k]
-        maxa=k
-print(maxa,maxn)
+# f=open('alice.txt',encoding='utf-8')
+# lines=f.read()
+# d={}
+# a=0
+# alpha=list("абвгдеёжзийклмнопрстуфхцчшщъыьэюя")
+# for ch in lines:
+#     ch=ch.lower()
+#     if ch in alpha:
+#         if d.get(ch,0)==0:
+#             d[ch]=1
+#         else:
+#             d[ch]+=1
+#         a+=1
+# f.close()
+# sum=0
+# for k in d:
+#     sum+=d[k]
+#     n=d[k]/a
+#     d[k]=n
+#     print(k,'=',n)
+# print(a,sum)
+# maxn=0
+# maxa=''
+# for k in d:
+#     if d[k]>maxn:
+#         maxn=d[k]
+#         maxa=k
+# print(maxa,maxn)
 
+# import math
+# c=input("введите слово ")
+# d={}
+# for i in c:
+#     if d.get(i,0)==0:
+#         d[i]=1
+#     else:
+#         d[i]+=1
+# a=len(d)
+# l=len(c)
+# print(d,a)
+# b=math.ceil(math.log2(a))
+# print((l*b)//8+1)
+# cd={}
+# cod=0
+# for k in d:
+#     cd[k]=cod
+#     cod+=1
+# print(cd)
+# for d in c:
+#     print("{:0{}b}".format(cd[d], b), end=' ')
+# import math
+# def drawcrcl(r):
+#     ss=0
+#     for i in range(2*r):
+#         for j in range(2*r):
+#             d=((r-i-0.5)**2+(r-j-0.5)**2)**0.5
+#             if d<=r:
+#                 print('o', end='')
+#                 ss+=1
+#             else:
+#                 print(' ', end='')
+#         print('')
+#     s=math.pi*r**2
+#     print(s)
+#     print(ss)
+# drawc
